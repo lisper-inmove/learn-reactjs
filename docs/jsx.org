@@ -1,0 +1,20 @@
+#+TITLE: JSX docs
+#+DATE: 2025-04-04 18:00:02
+#+DISPLAY: t
+#+STARTUP: indent
+#+OPTIONS: toc:10
+#+AUTHOR: inmove
+#+SUBTITLE:
+#+KEYWORDS:
+#+CATEGORIES: ReactJS
+
+* htmlFor
+
+在 JSX 中，htmlFor 是对应 HTML 中 label 标签的 for 属性的写法，用于将 <label> 和对应的表单控件（比如 <input>）关联起来。
+
+点击 label的 'Username:' 的时候，会自动聚焦到 id为username的input框上
+#+CAPTION: htmlFor
+#+begin_src javascript :results silent :noweb yes
+  <label htmlFor="username">Username:</label>
+  <input id="username" type="text" />
+#+end_src
