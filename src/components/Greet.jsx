@@ -40,6 +40,7 @@ function Greet() {
         );
       })}
       <User name="inmove" age={33} />
+      {numbers.length > 0 && <h2>Here are {numbers.length} numbers.</h2>}
     </section>
   );
 }
