@@ -1,7 +1,9 @@
 import User from "./User";
+import "./Great.css";
 
 function Greet() {
   const numbers = [1, 2, 3, 4, 5];
+  const styles = { color: "blue", backgroundColor: "pink" };
   const userInfos = [
     {
       name: "inmove",
@@ -41,6 +43,9 @@ function Greet() {
       })}
       <User name="inmove" age={33} />
       {numbers.length > 0 && <h2>Here are {numbers.length} numbers.</h2>}
+      <br />
+      <h1 style={{ color: "red", backgroundColor: "teal" }}>Inline Style</h1>
+      <h1 style={styles}>Inline Style 2</h1>
     </section>
   );
 }
