@@ -1,3 +1,5 @@
+import User from "./User";
+
 function Greet() {
   const numbers = [1, 2, 3, 4, 5];
   const userInfos = [
@@ -37,6 +39,7 @@ function Greet() {
           </ul>
         );
       })}
+      <User name="inmove" age={33} />
     </section>
   );
 }
