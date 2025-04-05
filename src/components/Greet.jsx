@@ -1,6 +1,7 @@
 import User from "./User";
 import { BiAbacus } from "react-icons/bi";
 import "./Great.css";
+import ArrayOperate from "./ArrayOperate";
 
 function Greet() {
   const numbers = [1, 2, 3];
@@ -48,6 +49,7 @@ function Greet() {
       <h1 style={{ color: "red", backgroundColor: "teal" }}>Inline Style</h1>
       <h1 style={styles}>Inline Style 2</h1>
       <BiAbacus />
+      <ArrayOperate />
     </section>
   );
 }
