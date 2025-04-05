@@ -3,10 +3,13 @@ import { BiAbacus } from "react-icons/bi";
 import "./Great.css";
 import Profile from "./Profile";
 import ArrayOperate from "./ArrayOperate";
+import PopupContent from "./PopupContent";
+import { useState } from "react";
 
 function Greet() {
   const numbers = [1, 2, 3];
   const styles = { color: "blue", backgroundColor: "pink" };
+  const [display, setDisplay] = useState(false);
   const userInfos = [
     {
       name: "inmove",
@@ -17,6 +20,12 @@ function Greet() {
       age: 3,
     },
   ];
+
+  const togglePopupContent = () => {
+    setDisplay(true);
+    console.log(display);
+    setTimeout(() => setDisplay(false), 2000);
+  };
 
   return (
     <section>
@@ -52,6 +61,8 @@ function Greet() {
       <BiAbacus />
       <ArrayOperate />
       <Profile />
+      <PopupContent display={display} />
+      <button onClick={togglePopupContent}>Display</button>
     </section>
   );
 }
