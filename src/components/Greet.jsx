@@ -1,8 +1,9 @@
 import User from "./User";
+import { BiAbacus } from "react-icons/bi";
 import "./Great.css";
 
 function Greet() {
-  const numbers = [1, 2, 3, 4, 5];
+  const numbers = [1, 2, 3];
   const styles = { color: "blue", backgroundColor: "pink" };
   const userInfos = [
     {
@@ -46,6 +47,7 @@ function Greet() {
       <br />
       <h1 style={{ color: "red", backgroundColor: "teal" }}>Inline Style</h1>
       <h1 style={styles}>Inline Style 2</h1>
+      <BiAbacus />
     </section>
   );
 }
