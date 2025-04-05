@@ -5,6 +5,7 @@ import Profile from "./Profile";
 import ArrayOperate from "./ArrayOperate";
 import PopupContent from "./PopupContent";
 import { useState } from "react";
+import Switcher from "./Switcher";
 
 function Greet() {
   const numbers = [1, 2, 3];
@@ -63,6 +64,8 @@ function Greet() {
       <Profile />
       <PopupContent display={display} />
       <button onClick={togglePopupContent}>Display</button>
+      <hr />
+      <Switcher />
     </section>
   );
 }
