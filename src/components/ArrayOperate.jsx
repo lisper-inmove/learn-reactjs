@@ -7,6 +7,13 @@ const ArrayOperate = () => {
     { id: 1, title: "Spider Man", ratings: 3 },
     { id: 2, title: "Superman", ratings: 6 },
   ]);
+  const [count, setCount] = useState(() => {
+    const initialCount = 10;
+    return initialCount;
+  });
+  const increment = () => {
+    setCount((prev) => prev + 1);
+  };
 
   const add = () => setFriends([...friends, "inmove"]);
   const add2 = () => setFriends((fs) => [...fs, "inmove"]);
@@ -30,7 +37,6 @@ const ArrayOperate = () => {
       <button onClick={add2}>Add2</button>
       <button onClick={remove}>Romeve</button>
       <button onClick={update}>Update</button>
-
       <hr />
       {movies.map((m) => (
         <li key={m.id}>
@@ -38,6 +44,9 @@ const ArrayOperate = () => {
         </li>
       ))}
       <button onClick={change}>Change</button>
+      <hr />
+      Count: {count}
+      <button onClick={increment}>Increment</button>
     </div>
   );
 };
