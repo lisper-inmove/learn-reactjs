@@ -1,6 +1,7 @@
 import User from "./User";
 import { BiAbacus } from "react-icons/bi";
 import "./Great.css";
+import Profile from "./Profile";
 import ArrayOperate from "./ArrayOperate";
 
 function Greet() {
@@ -50,6 +51,7 @@ function Greet() {
       <h1 style={styles}>Inline Style 2</h1>
       <BiAbacus />
       <ArrayOperate />
+      <Profile />
     </section>
   );
 }
